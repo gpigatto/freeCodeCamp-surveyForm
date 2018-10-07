@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <div>
+        <p id="description"></p>
+        <form id="survey-form">
+            <!-- Text input -->
+            <label id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Nome..."> <br>
+            <label id="email-label">Email:</label>
+            <input type="email" id="email" placeholder="Email..."> <br>
+            <label id="number-label">Idade:</label>
+            <input type="number" id="number" placeholder="Idade..." min="0" max="999"> <br>
+            <!-- Select input -->
+            <select id="dropdown"> 
+                <option value="a">a</option>                
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select> <br>
+            <!-- Radio input -->
+            <input type="radio" value="a" name="radio">a <br>
+            <input type="radio" value="b" name="radio">b <br>
+            <input type="radio" value="c" name="radio">c <br>
+            <!-- CheckBox input -->
+            <input type="checkbox" value="a" name="checkbox">a <br>
+            <input type="checkbox" value="b" name="checkbox">b <br>
+            <input type="checkbox" value="c" name="checkbox">c <br>
+            <!-- TextArea input -->
+            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comment.."></textarea> <br>
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
