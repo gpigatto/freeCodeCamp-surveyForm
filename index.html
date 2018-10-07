@@ -7,15 +7,15 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title"></h1>
+    <h1 id="title">Title</h1>
     <div>
-        <p id="description"></p>
+        <p id="description">Description</p>
         <form id="survey-form">
             <!-- Text input -->
             <label id="name-label">Name:</label>
-            <input type="text" id="name" placeholder="Nome..."> <br>
+            <input autofocus type="text" id="name" name="name" placeholder="Nome..." required> <br>
             <label id="email-label">Email:</label>
-            <input type="email" id="email" placeholder="Email..."> <br>
+            <input type="email" id="email" name="email" placeholder="Email..." required> <br>
             <label id="number-label">Idade:</label>
             <input type="number" id="number" placeholder="Idade..." min="0" max="999"> <br>
             <!-- Select input -->
