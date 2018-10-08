@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1 id="title">Title</h1>
-    <div>
+    <div id="main">
         <p id="description">Description</p>
         <form id="survey-form">
             <!-- Text input -->
-            <label id="name-label">Name:</label>
-            <input autofocus type="text" id="name" name="name" placeholder="Nome..." required> <br>
-            <label id="email-label">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email..." required> <br>
-            <label id="number-label">Idade:</label>
-            <input type="number" id="number" placeholder="Idade..." min="0" max="999"> <br>
+            <label id="name-label" class="labels">Name:</label>
+            <input autofocus type="text" id="name" class="rightTab inputField" name="name" placeholder="Nome..." required> <br>
+            <label id="email-label" class="labels">Email:</label>
+            <input type="email" id="email" class="rightTab inputField" name="email" placeholder="Email..." required> <br>
+            <label id="number-label" class="labels">Age:</label>
+            <input type="number" id="number" class="rightTab inputField" placeholder="Age..." min="0" max="999"> <br>
             <!-- Select input -->
-            <select id="dropdown"> 
+            <label id="dropdown-label" class="labels">Drop down menu:</label>
+            <select id="dropdown" class="rightTab dropdownField"> 
                 <option value="a">a</option>                
                 <option value="b">b</option>
                 <option value="c">c</option>
             </select> <br>
             <!-- Radio input -->
-            <input type="radio" value="a" name="radio">a <br>
-            <input type="radio" value="b" name="radio">b <br>
-            <input type="radio" value="c" name="radio">c <br>
+            <label id="radio-label" class="labels">Radio menu:</label>
+            <div class="rightTab">
+                <input type="radio" value="a" name="radio">a <br>
+                <input type="radio" value="b" name="radio">b <br>
+                <input type="radio" value="c" name="radio">c <br>
+            </div>
             <!-- CheckBox input -->
-            <input type="checkbox" value="a" name="checkbox">a <br>
-            <input type="checkbox" value="b" name="checkbox">b <br>
-            <input type="checkbox" value="c" name="checkbox">c <br>
+            <label id="checkbox-label" class="labels">Checkbox menu:</label>
+            <div class="rightTab">
+                <input type="checkbox" value="a" name="checkbox">a <br>
+                <input type="checkbox" value="b" name="checkbox">b <br>
+                <input type="checkbox" value="c" name="checkbox">c <br>
+            </div>
             <!-- TextArea input -->
-            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comment.."></textarea> <br>
+            <label id="textarea-label" class="labels">Text Area menu:</label>
+            <textarea name="comment" id="comments" class="rightTab textarea" cols="30" rows="10" placeholder="Enter your comment.."></textarea> <br>
             <!-- Submit Button -->
-            <button id="submit" type="submit">Submit</button>
+            <div class="submitholder">
+                <button id="submit" type="submit">Submit</button>
+            </div>
         </form>
     </div>
 </body>
